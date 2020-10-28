@@ -1,5 +1,5 @@
 import React from 'react';
-import { MovieItem } from './movieItem'; {/*importring movieItem component*/}
+import { MovieItem } from './movieItem'; {/*importing movieItem component*/}
 
 export class Movies extends React.Component {
 
