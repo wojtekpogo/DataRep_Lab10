@@ -14,9 +14,9 @@ export class Read extends React.Component {
     };
     
     componentDidMount(){ {/* function that takes json file from the api and returns a promise*/}
-        axios.get('https://jsonblob.com/api/jsonblob/520c3b5e-0312-11eb-a6af-cbf00d776032')
+        axios.get('http://localhost:4000/api/movies') //takes data from our new api 
         .then(resposne=>{
-            this.setState({movies:resposne.data.Search});
+            this.setState({movies:resposne.data.mymovies});
 
         })
         .catch((error)=>{ {/*error handling if it won't work*/}
