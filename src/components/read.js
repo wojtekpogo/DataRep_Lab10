@@ -16,7 +16,7 @@ export class Read extends React.Component {
     componentDidMount(){ {/* function that takes json file from the api and returns a promise*/}
         axios.get('http://localhost:4000/api/movies') //takes data from our new api 
         .then(resposne=>{
-            this.setState({movies:resposne.data.mymovies});
+            this.setState({movies:resposne.data});
 
         })
         .catch((error)=>{ {/*error handling if it won't work*/}

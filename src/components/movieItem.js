@@ -11,13 +11,13 @@ export class MovieItem extends React.Component {
             <div>
                 {/*using Card bootstrap to display movie objects*/}
                 <Card>
-                    <Card.Header><h2>{this.props.mymovie.Title}</h2></Card.Header>
+                    <Card.Header><h2>{this.props.mymovie.title}</h2></Card.Header>
                     <Card.Body>
                         <blockquote className="blockquote mb-0">
-                            <img src={this.props.mymovie.Poster} width="200" height="300"></img>
+                            <img src={this.props.mymovie.poster} width="200" height="300"></img>
 
                             <footer className="blockquote-footer">
-                                {this.props.mymovie.Year}
+                                {this.props.mymovie.year}
                             </footer>
                         </blockquote>
                     </Card.Body>
