@@ -7,7 +7,8 @@ export class Movies extends React.Component {
 
     {/*using map function to distract movie objects from array */}
         return this.props.mymovies.map((movie)=>{
-            return <MovieItem mymovie={movie}></MovieItem>
+            //passing the reload data method to the grandchild
+            return <MovieItem mymovie={movie} key={movie._id} ReloadData={this.props.ReloadData}></MovieItem>
         });
     }
 }

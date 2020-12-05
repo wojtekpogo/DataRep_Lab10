@@ -6,8 +6,10 @@ import { Footer } from './components/footer';
 import { Content } from './components/content';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';import { Read } from './components/read';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Read } from './components/read';
 import { Create } from './components/create';
+import { Edit } from './components/edit';
  {/* import controls for router-dom*/ }
 
 class App extends Component {
@@ -31,7 +33,8 @@ class App extends Component {
 
             <Route path='/' component={Content} exact />
             <Route path='/create' component={Create} exact /> {/* exact matches exact path */}
-            <Route path='/read' component={Read} exact />
+            <Route path='/read' component={Read} />
+            <Route path='/edit/:id' component={Edit}></Route> {/* added edit component */}
           </Switch>
 
 
